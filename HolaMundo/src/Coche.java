@@ -5,6 +5,7 @@ public class Coche {
 	static private int contador = 1;
 	
 	public Coche() {
+		
 		System.out.println(mensaje + contador++);
 	}
 	
