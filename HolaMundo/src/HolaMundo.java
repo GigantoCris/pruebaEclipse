@@ -19,6 +19,7 @@ public class HolaMundo {
 		int altura = 9 / 2;
 		for (int i = 0; i < 5; i++) {
 			System.out.println();
+			System.out.print("\t");
 			
 			for (int j = 0; j < 9; j++) {
 				if (j > (altura + i) || j < (altura - i)) {
@@ -33,6 +34,7 @@ public class HolaMundo {
 		
 		for (int i = 5; i > 0; i--) {
 			System.out.println();
+			System.out.print("\t");
 			
 			for (int j = 0; j < 9; j++) {
 				if (j >= (altura + i) || j <= (altura - i)) {
