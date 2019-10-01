@@ -29,13 +29,13 @@ public class HolaMundo {
 			}
 		}
 		
-		System.out.println("\nPIRÁMIDE ASTERISCOS INVERTIDA:");
+		System.out.println("\n\nPIRÁMIDE ASTERISCOS INVERTIDA:");
 		
 		for (int i = 5; i > 0; i--) {
 			System.out.println();
 			
-			for (int j = 9; j > 0; j--) {
-				if (j > (altura + i) || j <= (altura - i)) {
+			for (int j = 0; j < 9; j++) {
+				if (j >= (altura + i) || j <= (altura - i)) {
 					System.out.print("  ");
 				} else {
 					System.out.print("* ");
