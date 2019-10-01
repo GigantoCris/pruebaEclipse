@@ -16,18 +16,30 @@ public class HolaMundo {
 
 		System.out.println("\nPIRÁMIDE ASTERISCOS:");
 		
-		
 		int altura = 9 / 2;
 		for (int i = 0; i < 5; i++) {
 			System.out.println();
 			
 			for (int j = 0; j < 9; j++) {
-				if (j > (altura + i) && j < (altura - i)) {
-					System.out.print(" ");
+				if (j > (altura + i) || j < (altura - i)) {
+					System.out.print("  ");
 				} else {
 					System.out.print("* ");
 				}
-				altura++;
+			}
+		}
+		
+		System.out.println("\nPIRÁMIDE ASTERISCOS INVERTIDA:");
+		
+		for (int i = 5; i > 0; i--) {
+			System.out.println();
+			
+			for (int j = 9; j > 0; j--) {
+				if (j > (altura + i) || j <= (altura - i)) {
+					System.out.print("  ");
+				} else {
+					System.out.print("* ");
+				}
 			}
 		}
 	}
