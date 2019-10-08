@@ -7,6 +7,7 @@ public class Coche {
 	public Coche() {
 		
 		System.out.println(mensaje + contador++);
+		System.out.println("hola soy coche");
 	}
 	
 }
